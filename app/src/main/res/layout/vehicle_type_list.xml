@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/title1"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/TitleTextColor"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/registerTextColor"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/title2"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chk_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/TitleTextColor"
+                android:visibility="invisible"
+                android:textSize="12dp"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/registerTextColor"/>
+        </LinearLayout>
+    </LinearLayout>

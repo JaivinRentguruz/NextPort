@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/selected_dot"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/createprofile"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_to_profile1"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_chevron_left"/>
+                <TextView
+                    android:id="@+id/txtDiscardReg1"
+                    android:layout_width="0dp"
+                    android:layout_weight="96"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Discard"
+                    android:gravity="right"
+                    android:textAllCaps="true"
+                    android:textColor="@color/TitleTextColor"
+                    android:textSize="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/progress_rectangle_selected"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/progress_rectangle_default"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/progress_rectangle_default"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/progress_rectangle_default"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="22dp"
+                    android:text="Create Your Profile"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textColor="@color/TitleTextColor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:layout_below="@id/createprofile"
+            android:background="@drawable/curve_box"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="DRIVER'S NAME *"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/txt_font_size" />
+
+                <EditText
+                    android:id="@+id/edtcust_Fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_rectanglebox_215"
+                    android:fontFamily="@font/ubuntu"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:hint="Enter Driver Name"
+                    android:textColorHint="@color/textColorHint"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/edt_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="STREET NO &amp; NAME *"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/txt_font_size" />
+
+                <EditText
+                    android:id="@+id/edt_CustStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_rectanglebox_215"
+                    android:fontFamily="@font/ubuntu"
+                    android:hint="Enter Your Street No &amp; Name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/registerTextColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/edt_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="left"
+                        android:text="UNIT"
+                        android:textColor="@color/registerTextColor"
+                        android:textSize="@dimen/txt_font_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="left"
+                        android:text="PIN / ZIP CODE *"
+                        android:textColor="@color/registerTextColor"
+                        android:textSize="@dimen/txt_font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/edt_CustUnitNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_rectangle_box_200"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Unit"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/registerTextColor"
+                        android:textColorHint="@color/textColorHint"
+                        android:textSize="@dimen/edt_font_size" />
+
+                    <EditText
+                        android:id="@+id/edt_CustZipCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_rectangle_box_200"
+                        android:fontFamily="@font/ubuntu"
+                        android:hint="Enter Code"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:padding="5dp"
+                        android:textColor="@color/registerTextColor"
+                        android:textColorHint="@color/textColorHint"
+                        android:textSize="@dimen/edt_font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="COUNTRY *"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/txt_font_size" />
+
+                <Spinner
+                    android:id="@+id/sp_Countrylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_spinner_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="STATE / PROVINCE *"
+                    android:textAlignment="gravity"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/txt_font_size" />
+
+                <Spinner
+                    android:id="@+id/Sp_Statelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_spinner_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="CITY *"
+                    android:fontFamily="@font/ubuntu"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/txt_font_size" />
+
+                <EditText
+                    android:id="@+id/cust_cityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_rectanglebox_215"
+                    android:fontFamily="@font/ubuntu"
+                    android:entries="@array/items_class_city"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:hint="Enter City Name"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/edt_font_size" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/lblnext11"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/footerButtonBC"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtnext"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="14dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textColor="@color/TitleTextColor"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
