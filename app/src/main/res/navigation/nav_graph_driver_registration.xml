@@ -7,7 +7,7 @@
     tools:ignore="UnusedNavigation">
     <fragment
         android:id="@+id/CreateProfile"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Create_Profile"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Create_Profile"
         android:label="Create Profile"
         tools:layout="@layout/fragment_create_profile">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/DriverProfile"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_1"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_1"
         android:label="Profile"
         tools:layout="@layout/fragment_driver_profile_1">
         <action
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/DriverProfile2"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_2"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_2"
         android:label="LicenseDetails"
         tools:layout="@layout/fragment_driver_profile_2">
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/DriverProfile3"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_3"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_3"
         android:label="Profile"
         tools:layout="@layout/fragment_driver_profile_3">
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/DriverProfile4"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_4"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Driver_Profile_4"
         android:label="Creditcard Details"
         tools:layout="@layout/fragment_driver_profile_4">
         <action
@@ -76,7 +76,7 @@
 
     <fragment
         android:id="@+id/Complete_Register"
-        android:name="com.flexiicar.app.flexiicar.login.Fragment_Register_Completed"
+        android:name="com.nextport.flexiicar.app.flexiicar.login.Fragment_Register_Completed"
         android:label="Creditcard Details"
         tools:layout="@layout/fragment_registration_completed">
     </fragment>

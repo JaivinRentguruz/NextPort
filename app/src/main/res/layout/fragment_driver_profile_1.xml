@@ -105,7 +105,8 @@
             android:layout_marginBottom="48dp"
             android:layout_below="@id/createprofile"
             android:background="@drawable/curve_box"
-            android:scrollbars="vertical">
+            android:scrollbars="vertical"
+            android:windowSoftInputMode="adjustResize|adjustPan">
             <LinearLayout
                 android:id="@+id/layout1"
                 android:layout_width="match_parent"
@@ -124,10 +125,17 @@
                     android:textColor="@color/registerTextColor"
                     android:textSize="@dimen/txt_font_size" />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
                 <EditText
                     android:id="@+id/edtcust_Fullname"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/ic_rectanglebox_215"
                     android:fontFamily="@font/ubuntu"
@@ -136,11 +144,41 @@
                     android:padding="5dp"
                     android:singleLine="true"
                     android:textAlignment="textStart"
-                    android:hint="Enter Driver Name"
+                    android:hint="Driver First Name"
                     android:textColorHint="@color/textColorHint"
                     android:textColor="@color/registerTextColor"
-                    android:textSize="@dimen/edt_font_size" />
+                    android:textSize="@dimen/edt_font_size"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:nextFocusLeft="@id/edtcust_Lname"
+                    android:windowSoftInputMode="adjustResize|adjustPan"/>
 
+                    <EditText
+                        android:id="@+id/edtcust_Lname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_rectanglebox_215"
+                        android:fontFamily="@font/ubuntu"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textAlignment="textStart"
+                        android:hint="Driver Last Name"
+                        android:textColorHint="@color/textColorHint"
+                        android:textColor="@color/registerTextColor"
+                        android:textSize="@dimen/edt_font_size"
+                        android:layout_marginLeft="10dp"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@id/edt_CustStreet"
+                        android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -157,14 +195,18 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/ic_rectanglebox_215"
                     android:fontFamily="@font/ubuntu"
-                    android:hint="Enter Your Street No &amp; Name"
+                    android:hint="Your Street No &amp; Name"
                     android:inputType="text"
                     android:padding="5dp"
                     android:singleLine="true"
                     android:textAlignment="textStart"
                     android:textColor="@color/registerTextColor"
                     android:textColorHint="@color/textColorHint"
-                    android:textSize="@dimen/edt_font_size" />
+                    android:textSize="@dimen/edt_font_size"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_CustUnitNo"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -211,12 +253,17 @@
                         android:background="@drawable/ic_rectangle_box_200"
                         android:fontFamily="@font/ubuntu"
                         android:gravity="center_vertical"
-                        android:hint="Enter Unit"
+                        android:hint="Unit"
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textColor="@color/registerTextColor"
                         android:textColorHint="@color/textColorHint"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusLeft="@id/edt_CustZipCode"
+                        />
 
                     <EditText
                         android:id="@+id/edt_CustZipCode"
@@ -226,13 +273,17 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_rectangle_box_200"
                         android:fontFamily="@font/ubuntu"
-                        android:hint="Enter Code"
-                        android:inputType="number"
+                        android:hint="Code"
+                        android:inputType="text"
                         android:singleLine="true"
                         android:padding="5dp"
                         android:textColor="@color/registerTextColor"
                         android:textColorHint="@color/textColorHint"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionDone"
+                        android:nextFocusLeft="@id/sp_Countrylist"/>
 
                 </LinearLayout>
 
@@ -250,7 +301,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/ic_spinner_bg"/>
+                    android:background="@drawable/ic_spinner_bg"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/Sp_Statelist"
+                    android:windowSoftInputMode="stateHidden"
+                    android:entries="@array/items_class_countary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -268,7 +325,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/ic_spinner_bg"/>
+                    android:background="@drawable/ic_spinner_bg"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:nextFocusUp="@id/sp_Countrylist"
+                    android:nextFocusDown="@id/cust_cityName"
+                    android:windowSoftInputMode="stateHidden"
+                    android:entries="@array/items_class"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -294,9 +358,11 @@
                     android:padding="5dp"
                     android:singleLine="true"
                     android:textAlignment="textStart"
-                    android:hint="Enter City Name"
+                    android:hint="City Name"
                     android:textColorHint="@color/textColorHint"
-                    android:textSize="@dimen/edt_font_size" />
+                    android:textSize="@dimen/edt_font_size"
+                    android:imeOptions="actionDone"
+                    />
 
             </LinearLayout>
 

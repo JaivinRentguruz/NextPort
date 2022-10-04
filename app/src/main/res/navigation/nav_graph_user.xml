@@ -6,7 +6,7 @@
     app:startDestination="@id/User_Details">
     <fragment
         android:id="@+id/User_Details"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Customer_Profile"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Customer_Profile"
         android:label="User_Details"
         tools:layout="@layout/fragment_customer_profile">
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/ChangePass"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Change_Password"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Change_Password"
         android:label="ChangePass"
         tools:layout="@layout/fragment_changepassword">
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/Edit_Personal_info"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Update_Customer_Profile"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Update_Customer_Profile"
         android:label="Edit_Personal_info"
         tools:layout="@layout/fragment_update_customer_profile">
         <action
@@ -59,7 +59,7 @@
     //Reservation Flow
     <fragment
         android:id="@+id/Reservation"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Reservation"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Reservation"
         android:label="Reservation"
         tools:layout="@layout/fragment_reservation">
         <action
@@ -72,7 +72,7 @@
     </fragment>
     <fragment
         android:id="@+id/SummaryOfCharges"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Summary_Of_Charges_For_Reservation"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Summary_Of_Charges_For_Reservation"
         android:label="SummaryOfCharges"
         tools:layout="@layout/fragment_summary_of_charges">
         <action
@@ -93,7 +93,7 @@
     </fragment>
     <fragment
         android:id="@+id/Select_addtional_options"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Select_addition_Options_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Select_addition_Options_For_User"
         android:label="Select_addtional_options"
         tools:layout="@layout/fragment_select_additional_option">
         <action
@@ -111,7 +111,7 @@
     </fragment>
     <fragment
         android:id="@+id/FilterByVehicleClass"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Filter_By_Vehicle_Class_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Filter_By_Vehicle_Class_For_User"
         android:label="FilterByVehicleClass"
         tools:layout="@layout/fragment_filterby_vehicle_class">
         <action
@@ -126,7 +126,7 @@
     </fragment>
     <fragment
         android:id="@+id/MapScreenSearchAddress"
-        android:name="com.flexiicar.app.flexiicar.commonfragment.Fragment_Map_Screen_Search"
+        android:name="com.nextport.flexiicar.app.flexiicar.commonfragment.Fragment_Map_Screen_Search"
         android:label="MapScreenSearchAddress"
         tools:layout="@layout/fragment_map_screen_search">
         <action
@@ -135,7 +135,7 @@
     </fragment>
     <fragment
         android:id="@+id/Finalize_your_rental"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Finalize_Your_Rental_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Finalize_Your_Rental_For_User"
         android:label="Finalize_your_rental"
         tools:layout="@layout/fragment_finalize_your_rental">
         <action
@@ -159,7 +159,7 @@
     </fragment>
     <fragment
         android:id="@+id/Total_tax_fee_details"
-        android:name="com.flexiicar.app.flexiicar.commonfragment.Fragment_Details_of_tax_fees"
+        android:name="com.nextport.flexiicar.app.flexiicar.commonfragment.Fragment_Details_of_tax_fees"
         android:label="Total_tax_fee_details"
         tools:layout="@layout/fragment_details_of_tax_fee_applicable">
         <action
@@ -178,7 +178,7 @@
     </fragment>
     <fragment
         android:id="@+id/TermAndCondition"
-        android:name="com.flexiicar.app.flexiicar.commonfragment.Fragment_Term_And_Condition"
+        android:name="com.nextport.flexiicar.app.flexiicar.commonfragment.Fragment_Term_And_Condition"
         android:label="TermAndCondition"
         tools:layout="@layout/fragment_terms_and_conditions">
         <action
@@ -197,7 +197,7 @@
     </fragment>
     <fragment
         android:id="@+id/flight_details"
-        android:name="com.flexiicar.app.flexiicar.commonfragment.Fragment_Flight_Details"
+        android:name="com.nextport.flexiicar.app.flexiicar.commonfragment.Fragment_Flight_Details"
         android:label="flight_details"
         tools:layout="@layout/fragment_flight_details">
         <action
@@ -207,7 +207,7 @@
 
     <fragment
         android:id="@+id/Payment_checkout"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Payment_CheckOut_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Payment_CheckOut_For_User"
         android:label="Payment_checkout"
         tools:layout="@layout/fragment_payment_checkout_process">
 
@@ -226,7 +226,7 @@
     //User TimeLine
     <fragment
         android:id="@+id/User_timeline"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_User_Timeline"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_User_Timeline"
         android:label="User_timeline"
         tools:layout="@layout/fragment_user_timeline">
         <action
@@ -241,7 +241,7 @@
     </fragment>
     <fragment
         android:id="@+id/Poston_Your_Timeline"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Add_Customer_Activity"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Add_Customer_Activity"
         android:label="Post_on_Your_Timeline"
         tools:layout="@layout/fragment_add_customer_activity">
         <action
@@ -250,7 +250,7 @@
     </fragment>
     <fragment
         android:id="@+id/Update_CutomerActivity"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Update_Customer_Activity"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Update_Customer_Activity"
         android:label="Post_on_Your_Timeline"
         tools:layout="@layout/fragment_add_customer_activity">
         <action
@@ -261,7 +261,7 @@
     //Account Statment
     <fragment
         android:id="@+id/Bills_and_Payment"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Bills_And_Payment"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Bills_And_Payment"
         android:label="Bills_and_Payment"
         tools:layout="@layout/fragment_bills_and_payments">
         <action
@@ -285,7 +285,7 @@
     </fragment>
     <fragment
         android:id="@+id/BillsPayment_Filter"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Bills_And_Payment_Filter"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Bills_And_Payment_Filter"
         android:label="BillsPayment_Filter"
         tools:layout="@layout/fragment_bills_and_payments_filter">
         <action
@@ -295,7 +295,7 @@
     </fragment>
     <fragment
         android:id="@+id/Traffic_Ticket"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Traffic_Ticket"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Traffic_Ticket"
         android:label="Traffic_Ticket"
         tools:layout="@layout/fragment_traffic_ticket">
         <action
@@ -305,7 +305,7 @@
     </fragment>
     <fragment
         android:id="@+id/Traffic_Ticket_Image"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Traffic_Ticket_Image"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Traffic_Ticket_Image"
         android:label="Traffic_Ticket_Image"
         tools:layout="@layout/fragment_traffic_ticket_image">
         <action
@@ -320,7 +320,7 @@
     </fragment>
     <fragment
         android:id="@+id/Payment_Success"
-        android:name="com.flexiicar.app.flexiicar.commonfragment.Fragment_Payment_checkout_Success"
+        android:name="com.nextport.flexiicar.app.flexiicar.commonfragment.Fragment_Payment_checkout_Success"
         android:label="Payment_Success"
         tools:layout="@layout/fragment_payment_checkout_success">
         <action
@@ -335,7 +335,7 @@
     </fragment>
     <fragment
         android:id="@+id/Traffic_Ticket_2"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Traffic_ticket_2"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Traffic_ticket_2"
         android:label="Traffic_Ticket_2"
         tools:layout="@layout/fragment_traffic_ticket_2">
 
@@ -345,7 +345,7 @@
     </fragment>
     <fragment
         android:id="@+id/Invoice_Image"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Invoice_image"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Invoice_image"
         android:label="Invoice_Image"
         tools:layout="@layout/fragment_invoice_image">
         <action
@@ -360,7 +360,7 @@
     </fragment>
     <fragment
         android:id="@+id/TollCharge_Image"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_TollCharge_Image"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_TollCharge_Image"
         android:label="TollCharge_Image"
         tools:layout="@layout/fragment_tollcharge_image">
         <action
@@ -375,14 +375,14 @@
     </fragment>
     <fragment
         android:id="@+id/Payment_Reciept"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Payment_Reciept"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Payment_Reciept"
         android:label="Payment_Reciept"
         tools:layout="@layout/fragment_payment_receipt">
     </fragment>
 
     <fragment
         android:id="@+id/Payment_Reciept_2"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Payment_Reciept_2"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Payment_Reciept_2"
         android:label="Payment_Reciept"
         tools:layout="@layout/fragment_payment_receipt_2">
         <action
@@ -400,7 +400,7 @@
     //InsurancePolicy
     <fragment
         android:id="@+id/InsurancePolicyList"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Customer_Insurance_list"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Customer_Insurance_list"
         android:label="InsurancePolicyList"
         tools:layout="@layout/fragment_customer_insurance_list">
         <action
@@ -409,10 +409,15 @@
         <action
             android:id="@+id/action_InsurancePolicyList_to_User_Details"
             app:destination="@id/User_Details" />
+
+        <action
+            android:id="@+id/action_InsurancePolicyList_to_AddInsurancePolicy"
+            app:destination="@id/AddInsurancePolicy" />
+
     </fragment>
     <fragment
         android:id="@+id/InsurancePolicy"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Update_Insurance_Policy"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Update_Insurance_Policy"
         android:label="InsurancePolicy"
         tools:layout="@layout/fragment_customer_insurance_update">
         <action
@@ -420,10 +425,21 @@
             app:destination="@id/InsurancePolicyList" />
     </fragment>
 
+    <fragment android:id="@+id/AddInsurancePolicy"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Add_Insurance_For_User"
+        android:label="InsurancePolicy"
+        tools:layout="@layout/fragment_add_insurance_for_user">
+
+        <action
+            android:id="@+id/action_AddInsurancePolicy_to_InsurancePolicyList"
+            app:destination="@id/InsurancePolicyList" />
+
+    </fragment>
+
     //DrivingLicense_Details
     <fragment
         android:id="@+id/DrivingLicense_Details"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Driving_License_List"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Driving_License_List"
         android:label="DrivingLicense_Details"
         tools:layout="@layout/fragment_driving_license_list">
         <action
@@ -438,7 +454,7 @@
     </fragment>
     <fragment
         android:id="@+id/DrivingLicense_Add"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Driving_License_Add"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Driving_License_Add"
         android:label="DrivingLicense_Add"
         tools:layout="@layout/fragment_driving_license_add_update">
         <action
@@ -447,7 +463,7 @@
     </fragment>
     <fragment
         android:id="@+id/DrivingLicense_Update"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Driving_License_Update"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Driving_License_Update"
         android:label="DrivingLicense_Details2"
         tools:layout="@layout/fragment_driving_license_add_update">
         <action
@@ -459,7 +475,7 @@
     //Credit Card List
     <fragment
         android:id="@+id/CardsOnAccount"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_CreditCards_List_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_CreditCards_List_For_User"
         android:label="CardsOnAccount"
         tools:layout="@layout/fragment_creditcards_list">
         <action
@@ -492,7 +508,7 @@
     </fragment>
     <fragment
         android:id="@+id/AddCreditCard"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Add_credit_card_For_User"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Add_credit_card_For_User"
         android:label="AddCreditCard"
         tools:layout="@layout/fragment_add_creditcard">
         <action
@@ -502,7 +518,7 @@
 
     <fragment
         android:id="@+id/UpdateCreditCard"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Update_CreditCard_For_user"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Update_CreditCard_For_user"
         android:label="EditCreditCard"
         tools:layout="@layout/fragment_update_creditcard">
         <action
@@ -515,7 +531,7 @@
  //Self CheckOut
     <fragment
         android:id="@+id/Agreements"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Agreements"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Agreements"
         android:label="Agreements"
         tools:layout="@layout/fragment_agreements">
         <action
@@ -527,7 +543,7 @@
     </fragment>
     <fragment
         android:id="@+id/SummaryOfChargesForAgreements"
-        android:name="com.flexiicar.app.flexiicar.user.Fragment_Summary_Of_Charges_For_Agreements"
+        android:name="com.nextport.flexiicar.app.flexiicar.user.Fragment_Summary_Of_Charges_For_Agreements"
         android:label="SummaryOfChargesForAgreements"
         tools:layout="@layout/fragment_summary_of_charges_for_agreements">
         <action
@@ -549,7 +565,7 @@
 
     <fragment
         android:id="@+id/Self_check_Out"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Self_Check_out"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Self_Check_out"
         android:label="Self_check_Out"
         tools:layout="@layout/fragment_self_checkout">
         <action
@@ -565,7 +581,7 @@
 
     <fragment
         android:id="@+id/Vehicle_Image_1"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_1"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_1"
         android:label="Vehicle_Image_1"
         tools:layout="@layout/fragment_vehicle_images_1">
         <action
@@ -580,7 +596,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_img_2"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_2"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_2"
         android:label="Vehicle_img_2"
         tools:layout="@layout/fragment_vehicle_images_2">
         <action
@@ -595,7 +611,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_3"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_3"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_3"
         android:label="Vehicle_Image_3"
         tools:layout="@layout/fragment_vehicle_images_3">
         <action
@@ -610,7 +626,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_4"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_4"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_4"
         android:label="Vehicle_img_Passengerside"
         tools:layout="@layout/fragment_vehicle_images_4">
         <action
@@ -625,7 +641,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_5"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_5"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_5"
         android:label="Vehicle_Image_5"
         tools:layout="@layout/fragment_vehicle_images_5">
         <action
@@ -640,7 +656,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_6"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_6"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_6"
         android:label="Vehicle_Image_6"
         tools:layout="@layout/fragment_vehicle_images_6">
         <action
@@ -655,7 +671,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_7"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_7"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_7"
         android:label="Vehicle_Image_7"
         tools:layout="@layout/fragment_vehicle_images_7">
         <action
@@ -670,7 +686,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_8"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_8"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_8"
         android:label="Vehicle_Image_8"
         tools:layout="@layout/fragment_vehicle_images_8">
         <action
@@ -685,7 +701,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_9"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_9"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_9"
         android:label="Vehicle_Image_9"
         tools:layout="@layout/fragment_vehicle_images_9">
         <action
@@ -700,7 +716,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Image_10"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_10"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_10"
         android:label="Vehicle_Image_10"
         tools:layout="@layout/fragment_vehicle_images_10">
         <action
@@ -715,7 +731,7 @@
     </fragment>
     <fragment
         android:id="@+id/Vehicle_Additional_image"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Additional_Image_All"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Vehicle_Additional_Image_All"
         android:label="Vehicle_Additional_image"
         tools:layout="@layout/fragment_vehicle_images_additional_all">
         <action
@@ -730,7 +746,7 @@
     </fragment>
     <fragment
         android:id="@+id/Acceptance_signature"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Acceptance_singnature"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Acceptance_singnature"
         android:label="Acceptance_signature"
         tools:layout="@layout/fragment_acceptance_signature">
         <action
@@ -743,7 +759,7 @@
 
     <fragment
         android:id="@+id/Waiver_Signature"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Waiver_Signature"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Waiver_Signature"
         android:label="Waiver_Signature"
         tools:layout="@layout/fragment_waiver_signature">
         <action
@@ -758,7 +774,7 @@
     </fragment>
     <fragment
         android:id="@+id/Location_And_Key"
-        android:name="com.flexiicar.app.flexiicar.selfcheckout.Fragment_Location_And_Key"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckout.Fragment_Location_And_Key"
         android:label="Location_And_Key"
         tools:layout="@layout/fragment_location_and_key">
         <action
@@ -771,7 +787,7 @@
   //Self CheckIn
     <fragment
         android:id="@+id/LocationKey_ForSelfCheckOut"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Location_And_Key"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Location_And_Key"
         android:label="Location_And_Key"
         tools:layout="@layout/fragment_location_and_key">
         <action
@@ -784,7 +800,7 @@
 
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_1"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_1"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_1"
             android:label="Vehicle_Image1_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_1">
             <action
@@ -799,7 +815,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_2"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_2"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_2"
             android:label="Vehicle_Image2_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_2">
             <action
@@ -814,7 +830,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_3"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_3"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_3"
             android:label="Vehicle_Image3_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_3">
             <action
@@ -829,7 +845,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_4"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_4"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_4"
             android:label="Vehicle_Image4_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_4">
             <action
@@ -844,7 +860,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_5"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_5"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_5"
             android:label="Vehicle_Image5_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_5">
             <action
@@ -859,7 +875,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_6"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_6"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_6"
             android:label="Vehicle_Image6_SelfCheckIn"
             tools:layout="@layout/fragment_vehicle_images_6">
             <action
@@ -874,7 +890,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_7"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_7"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_7"
             android:label="Vehicle_Image_7"
             tools:layout="@layout/fragment_vehicle_images_7">
             <action
@@ -889,7 +905,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_8"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_8"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_8"
             android:label="Vehicle_Image_8"
             tools:layout="@layout/fragment_vehicle_images_8">
             <action
@@ -904,7 +920,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_9"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_9"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_9"
             android:label="Vehicle_Image_9"
             tools:layout="@layout/fragment_vehicle_images_9">
             <action
@@ -919,7 +935,7 @@
         </fragment>
         <fragment
             android:id="@+id/VehImage_SelfCheckIn_10"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_10"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_10"
             android:label="Vehicle_Image_10"
             tools:layout="@layout/fragment_vehicle_images_10">
             <action
@@ -934,7 +950,7 @@
         </fragment>
         <fragment
             android:id="@+id/Vehicle_All_image_SelfCheckIn"
-            android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Additional_Image_All"
+            android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Vehicle_Additional_Image_All"
             android:label="Vehicle_Additional_image"
             tools:layout="@layout/fragment_vehicle_images_additional_all">
             <action
@@ -950,7 +966,7 @@
 
       <fragment
         android:id="@+id/Signature"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Acceptance_singnature"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Acceptance_singnature"
         android:label="Signature"
         tools:layout="@layout/fragment_acceptance_signature">
         <action
@@ -962,7 +978,7 @@
       </fragment>
     <fragment
         android:id="@+id/Self_check_In"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Self_Check_In"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Self_Check_In"
         android:label="Self_check_In"
         tools:layout="@layout/fragment_self_checkin">
         <action
@@ -975,7 +991,7 @@
 
     <fragment
         android:id="@+id/SummaryOfChargeForSelfCheckIn"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Summary_Of_Charges_For_SelfCheckIn"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Summary_Of_Charges_For_SelfCheckIn"
         android:label="SummaryOfChargeForSelfCheckIn"
         tools:layout="@layout/fragment_summary_of_charges_for_selfcheckin">
         <action
@@ -996,7 +1012,7 @@
     </fragment>
     <fragment
         android:id="@+id/PaymentCheckOutSelfCheckIn"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Payment_CheckOut_For_User_SelfCheckIn"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Payment_CheckOut_For_User_SelfCheckIn"
         android:label="PaymentCheckOutSelfCheckIn"
         tools:layout="@layout/fragment_payment_checkout_process">
         <action
@@ -1011,7 +1027,7 @@
     </fragment>
     <fragment
         android:id="@+id/WaiverSign_ForSelfCheckIn"
-        android:name="com.flexiicar.app.flexiicar.selfcheckin.Fragment_Waiver_Signature_For_SelfCheckIn"
+        android:name="com.nextport.flexiicar.app.flexiicar.selfcheckin.Fragment_Waiver_Signature_For_SelfCheckIn"
         android:label="WaiverSign_ForSelfCheckIn"
         tools:layout="@layout/fragment_waiver_signature">
 

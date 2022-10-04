@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.flexiicar.app.fleetowner.ownerlogin.Fragment_Owner_login"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerlogin.Fragment_Owner_login"
         android:label="Login"
         tools:layout="@layout/fragment_login">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/Forget_Password"
-        android:name="com.flexiicar.app.fleetowner.ownerlogin.Fragment_Forget_Password"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerlogin.Fragment_Forget_Password"
         android:label="Forget_Password"
         tools:layout="@layout/fragment_forgot_password">
         <action
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/REset_Password"
-        android:name="com.flexiicar.app.fleetowner.ownerlogin.Fragment_Owner_Reset_Password"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerlogin.Fragment_Owner_Reset_Password"
         android:label="REset_Password"
         tools:layout="@layout/fragment_reset_password">
         <action

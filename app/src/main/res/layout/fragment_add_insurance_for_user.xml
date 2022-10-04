@@ -110,21 +110,21 @@
                     android:textColor="@color/registerTextColor"
                     android:textSize="@dimen/txt_font_size" />
 
-                    <EditText
-                        android:id="@+id/edt_PolicyNo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="25dp"
-                        android:background="@drawable/ic_rectangle_box_215"
-                        android:fontFamily="@font/ubuntu"
-                        android:inputType="text"
-                        android:padding="5dp"
-                        android:hint="Enter Policy Number"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/registerTextColor"
-                        android:textSize="@dimen/edt_font_size" />
+                <EditText
+                    android:id="@+id/edt_PolicyNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/ic_rectangle_box_215"
+                    android:fontFamily="@font/ubuntu"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:hint="Enter Policy Number"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/registerTextColor"
+                    android:textSize="@dimen/edt_font_size" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,7 +141,8 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/ubuntu"
                         android:gravity="left"
-                        android:text="Expiry Date"
+                        android:layout_marginRight="10dp"
+                        android:text="Issue date"
                         android:textAllCaps="true"
                         android:textColor="@color/registerTextColor"
                         android:textSize="@dimen/txt_font_size" />
@@ -149,14 +150,15 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="17dp"
                         android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:fontFamily="@font/ubuntu"
                         android:gravity="left"
-                        android:text="Issue date"
+                        android:text="Expiry Date"
                         android:textAllCaps="true"
                         android:textColor="@color/registerTextColor"
                         android:textSize="@dimen/txt_font_size" />
+
 
                 </LinearLayout>
 
@@ -170,33 +172,33 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:id="@+id/edt_ExpiryDate"
+                        android:id="@+id/IpIssue_Date"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
-                        android:background="@drawable/ic_rectangle_box_215"
-                        android:drawableRight="@drawable/ic_calender"
-                        android:fontFamily="@font/ubuntu"
                         android:gravity="center_vertical"
-                        android:hint="Date"
+                        android:background="@drawable/ic_rectangle_box_215"
+                        android:fontFamily="@font/ubuntu"
                         android:padding="5dp"
+                        android:hint="Date"
+                        android:drawableRight="@drawable/ic_calender"
                         android:textColor="@color/registerTextColor"
                         android:textColorHint="@color/textColorHint"
                         android:textSize="@dimen/edt_font_size" />
 
                     <TextView
-                        android:id="@+id/IpIssue_Date"
+                        android:id="@+id/edt_ExpiryDate"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
                         android:background="@drawable/ic_rectangle_box_215"
-                        android:fontFamily="@font/ubuntu"
-                        android:padding="5dp"
-                        android:hint="Date"
                         android:drawableRight="@drawable/ic_calender"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="center_vertical"
+                        android:hint="Date"
+                        android:padding="5dp"
                         android:textColor="@color/registerTextColor"
                         android:textColorHint="@color/textColorHint"
                         android:textSize="@dimen/edt_font_size" />
@@ -247,13 +249,13 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/ic_take_a_pic"
                     android:layout_height="match_parent">
-                <ImageView
-                    android:id="@+id/Img_UploadPolicy"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:scaleType="fitXY"
-                    android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/Img_UploadPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"/>
                 </LinearLayout>
             </LinearLayout>
 

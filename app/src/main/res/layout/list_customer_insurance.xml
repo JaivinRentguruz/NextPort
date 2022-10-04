@@ -165,7 +165,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:text="Policy_No: "
+                            android:text="Policy No: "
                             android:textSize="14dp"
                             android:textColor="@color/selected_dot"
                             android:fontFamily="@font/ubuntu_light"
@@ -207,7 +207,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:text="ExpiryDate: "
+                            android:text="Expiry Date: "
                             android:textSize="14dp"
                             android:textColor="@color/selected_dot"
                             android:fontFamily="@font/ubuntu_light"
@@ -229,7 +229,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:text="IssueDate: "
+                            android:text="Issue Date: "
                             android:textSize="14dp"
                             android:textColor="@color/selected_dot"
                             android:fontFamily="@font/ubuntu_light"

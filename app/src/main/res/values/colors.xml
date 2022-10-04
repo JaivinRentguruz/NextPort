@@ -31,4 +31,6 @@
     <color name="btn_bg_color_1">#72A1FF</color>
     <color name="btn2">#C74141</color>
     <color name="curvebox_bg_color">#D5D4D4</color>
+
+    <color name="progressbar">#91C722</color>
 </resources>

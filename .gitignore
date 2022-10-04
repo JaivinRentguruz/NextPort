@@ -12,3 +12,8 @@
 /captures
 .externalNativeBuild
 .cxx
+
+# Project exclude paths
+/acuantcommon/build/
+/acuantdocumentprocessing/build/
+/acuantimagepreparation/build/

@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.flexiicar.app"
+        applicationId "com.nextport.flexiicar.app"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -20,6 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies
@@ -42,9 +51,12 @@ dependencies
     //implementation 'com.google.android.gms:play-services-maps:8.3.0'
 
     implementation'com.google.android.gms:play-services-maps:17.0.0'
-    implementation "com.google.android.gms:play-services-location:17.0.0"
-    implementation "com.google.android.gms:play-services-places:17.0.0"
+    //implementation "com.google.android.gms:play-services-location:17.0.0"
+    //implementation "com.google.android.gms:play-services-places:17.0.0"
     implementation 'com.google.android.libraries.places:places:1.0.0'
+         implementation 'com.google.android.gms:play-services-places:16.0.0'
+      //   implementation 'com.google.android.gms:play-services-places:16.0.0'
+         implementation 'com.google.android.gms:play-services-location:16.0.0'
    // implementation 'com.github.barteksc:android-pdf-viewer:2.0.3'
 
     implementation 'com.archit.calendar:awesome-calendar:1.1.7'

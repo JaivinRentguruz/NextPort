@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Driver"
+            type="com.nextport.flexiicar.app.model.response.UpdateDL" />
+    </data>
+
+
+
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/selected_dot"
     android:layout_height="match_parent">
 
@@ -117,20 +126,51 @@
                         android:textColor="@color/registerTextColor"
                         android:textSize="@dimen/txt_font_size" />
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
                     <EditText
                         android:id="@+id/edt_driverName"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/ic_rectangle_box_215"
                         android:fontFamily="@font/ubuntu"
-                        android:hint="Enter Driver Full Name"
+                        android:hint="First Name"
+                        android:text="@={Driver.FName}"
                         android:inputType="text"
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textAlignment="textStart"
                         android:textColor="@color/registerTextColor"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        />
+
+                        <EditText
+                            android:id="@+id/edt_driverLastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/ic_rectangle_box_215"
+                            android:fontFamily="@font/ubuntu"
+                            android:hint="Last Name"
+                            android:text="@={Driver.LName}"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/registerTextColor"
+                            android:textSize="@dimen/edt_font_size"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -156,7 +196,8 @@
                             android:background="@drawable/ic_rectangle_box_215"
                             android:fontFamily="@font/ubuntu"
                             android:hint="Enter License Number"
-                            android:inputType="number"
+                            android:text="@{Driver.DrivingLicenceModel.Number}"
+                            android:inputType="text"
                             android:padding="5dp"
                             android:textAlignment="textStart"
                             android:textColor="@color/registerTextColor"
@@ -178,6 +219,34 @@
 
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/registerTextColor"
+                        android:fontFamily="@font/ubuntu"
+                        android:text="Date of BIrth *"
+                        android:textAllCaps="true"
+                        android:layout_marginRight="10dp"
+                        android:textSize="@dimen/txt_font_size" />
+
+                    <TextView
+                        android:id="@+id/Cus_DateofBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_rectanglebox_215"
+                        android:fontFamily="@font/ubuntu"
+                        android:textSize="@dimen/edt_font_size"
+                        android:inputType="date"
+                        android:drawableRight="@drawable/ic_calender"
+                        android:hint="MM/DD/YYYY"
+                        android:textColorHint="@color/textColorHint"
+                        android:textColor="@color/registerTextColor"/>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -185,13 +254,16 @@
                         android:orientation="horizontal"
                         android:weightSum="2">
 
+
+
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/ubuntu"
                             android:gravity="left"
-                            android:text="Expiry Date *"
+                            android:text="Issue date *"
                             android:textAllCaps="true"
                             android:textColor="@color/registerTextColor"
                             android:textSize="@dimen/txt_font_size" />
@@ -199,11 +271,11 @@
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="17dp"
                             android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
                             android:fontFamily="@font/ubuntu"
                             android:gravity="left"
-                            android:text="Issue date *"
+                            android:text="Expiry Date *"
                             android:textAllCaps="true"
                             android:textColor="@color/registerTextColor"
                             android:textSize="@dimen/txt_font_size" />
@@ -218,7 +290,7 @@
                         android:weightSum="2">
 
                         <TextView
-                            android:id="@+id/edt_exDate"
+                            android:id="@+id/edt_issuedate"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -226,15 +298,15 @@
                             android:background="@drawable/ic_rectangle_box_215"
                             android:fontFamily="@font/ubuntu"
                             android:drawableRight="@drawable/ic_calender"
-                            android:gravity="center_vertical"
                             android:hint="Date"
+                            android:gravity="center_vertical"
                             android:padding="5dp"
                             android:textColor="@color/registerTextColor"
                             android:textColorHint="@color/textColorHint"
                             android:textSize="@dimen/edt_font_size" />
 
                         <TextView
-                            android:id="@+id/edt_issuedate"
+                            android:id="@+id/edt_exDate"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -242,15 +314,90 @@
                             android:background="@drawable/ic_rectangle_box_215"
                             android:fontFamily="@font/ubuntu"
                             android:drawableRight="@drawable/ic_calender"
-                            android:hint="Date"
                             android:gravity="center_vertical"
+                            android:hint="Date"
+                            android:text="@={Driver.DrivingLicenceModel.ExpiryDate}"
                             android:padding="5dp"
                             android:textColor="@color/registerTextColor"
                             android:textColorHint="@color/textColorHint"
                             android:textSize="@dimen/edt_font_size" />
 
+
+
                     </LinearLayout>
-                    <TextView
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Issue By"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/txt_font_size"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:textColor="@color/registerTextColor"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/registerTextColor"
+                            android:fontFamily="@font/ubuntu"
+                            android:text="State / Provience *"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/txt_font_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/Sp_Country"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_spinner_bg"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionNext"
+                            android:nextFocusUp="@id/sp_Countrylist"
+                            android:nextFocusDown="@id/cust_cityName"
+                            android:windowSoftInputMode="stateHidden"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/Sp_State"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_spinner_bg"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionNext"
+                            android:nextFocusUp="@id/sp_Countrylist"
+                            android:nextFocusDown="@id/cust_cityName"
+                            android:windowSoftInputMode="stateHidden"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                  <!--  <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -273,7 +420,7 @@
                         android:singleLine="true"
                         android:textAlignment="textStart"
                         android:textColor="@color/registerTextColor"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size" />-->
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -317,6 +464,7 @@
                         android:background="@drawable/ic_rectangle_box_215"
                         android:fontFamily="@font/ubuntu"
                         android:inputType="textEmailAddress"
+                        android:text="@={Driver.Email}"
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textAlignment="textStart"
@@ -341,8 +489,9 @@
                         android:background="@drawable/ic_rectangle_box_215"
                         android:fontFamily="@font/ubuntu"
                         android:inputType="number"
+                        android:text="@={Driver.PhoneNo}"
                         android:padding="5dp"
-                        android:maxLength="15"
+                        android:maxLength="12"
                         android:singleLine="true"
                         android:textAlignment="textStart"
                         android:textColor="@color/registerTextColor"
@@ -402,3 +551,5 @@
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

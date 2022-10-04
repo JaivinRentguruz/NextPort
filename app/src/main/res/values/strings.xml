@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FlexiiCar</string>
+    <string name="app_name">NextFlexiiCar</string>
 
     <string name="title_activity_splash_screen">FlexiiCar</string>
     <string name="dummy_button">Dummy Button</string>
@@ -95,6 +95,8 @@
     </string-array>
 
     <string name="map_api_key">AIzaSyB8GVnpTSKV8BBBf3nqhHL4fmrFar3A5sM</string>
+    <!--    <string name="map_api_key">AIzaSyBI_lIw-YvKBuiyXC3GVi2QTx2RgFmGcWQ</string>-->
+    <!--<string name="map_api_key">AIzaSyDLDdpvPMi9P5z75AknbTuakKYl6H_HWoo</string>-->
 
     <string name="car_rental_tax">@ 12% =$ 157.68</string>
     <string name="con_recovery">10 Days @ 0.50 = $5.00</string>
@@ -127,4 +129,6 @@
         driver. This is a special instructions to \n the driver. This is a special instructions to the driver. This \n is a special instructions to the driver.
         This is a special \n instructions to the driver. This is a special instructions to \n  the driver. This is a special instructions to the driver.
         \n This is a special instructions to the driver. This is a special \n  instructions to the driver.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

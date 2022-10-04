@@ -56,7 +56,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginRight="13dp"
                 android:fontFamily="@font/ubuntu_bold"
-                android:text=""
+                android:text="ADD"
                 android:textAllCaps="true"
                 android:textColor="@color/screen_bg_color"
                 android:textSize="14dp" />

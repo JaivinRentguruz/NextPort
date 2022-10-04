@@ -8,6 +8,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/ubuntu_bold"
-                    android:text=""
+                    android:text="ADD"
                     android:textAllCaps="true"
                     android:textColor="@color/screen_bg_color"
                     android:textSize="14dp"
@@ -69,14 +72,77 @@
             android:paddingRight="5dp"
             android:paddingLeft="5dp"
             android:background="@drawable/curve_box">
+
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/curve_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu"
+                        android:textAllCaps="true"
+                        android:text="PRIMARY Driver"
+                        android:textColor="@color/selected_dot"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorHint"/>
+
+                <include layout="@layout/list_driving_license"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/curve_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu"
+                        android:textAllCaps="true"
+                        android:text="SECONDARY Driver"
+                        android:textColor="@color/selected_dot"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
                 <RelativeLayout
                     android:id="@+id/rl_DrivingLicenceList"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/progress_circular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminateTint="@color/progressbar"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+
                 </RelativeLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

@@ -103,7 +103,8 @@
                     android:fontFamily="@font/ubuntu_light"
                     android:text="This is a my sample text, read? This is a my sample text, read? This is a my"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout

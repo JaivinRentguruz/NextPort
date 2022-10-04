@@ -134,13 +134,17 @@
                             android:gravity="center_vertical"
                             android:background="@drawable/ic_rectanglebox_cardno"
                             android:fontFamily="@font/ubuntu"
-                            android:inputType="text"
+                            android:inputType="number"
                             android:padding="5dp"
                             android:hint="Enter Card Number"
                             android:textColorHint="@color/textColorHint"
                             android:singleLine="true"
+                            android:maxLength="16"
                             android:textColor="@color/registerTextColor"
-                            android:textSize="@dimen/edt_font_size" />
+                            android:textSize="@dimen/edt_font_size"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionDone"/>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -198,7 +202,7 @@
                         android:orientation="horizontal"
                         android:weightSum="2">
 
-                        <EditText
+                        <TextView
                             android:id="@+id/edt_ExDate"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -212,7 +216,7 @@
                             android:hint="MM/YY"
                             android:textColor="@color/registerTextColor"
                             android:textColorHint="@color/textColorHint"
-                            android:textSize="@dimen/edt_font_size" />
+                            android:textSize="@dimen/edt_font_size"/>
 
                         <EditText
                             android:id="@+id/edt_CvvNo"
@@ -229,7 +233,11 @@
                             android:inputType="numberPassword"
                             android:textColor="@color/registerTextColor"
                             android:textColorHint="@color/textColorHint"
-                            android:textSize="@dimen/edt_font_size" />
+                            android:textSize="@dimen/edt_font_size"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@id/edt_cardholderName"/>
 
                     </LinearLayout>
 
@@ -255,7 +263,11 @@
                         android:singleLine="true"
                         android:gravity="center_vertical"
                         android:textColor="@color/registerTextColor"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@id/edt_streetNameCC"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -280,7 +292,11 @@
                         android:singleLine="true"
                         android:gravity="center_vertical"
                         android:textColor="@color/registerTextColor"
-                        android:textSize="@dimen/edt_font_size" />
+                        android:textSize="@dimen/edt_font_size"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@id/edtxtUnitNumberCC"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -331,7 +347,14 @@
                             android:padding="5dp"
                             android:gravity="center_vertical"
                             android:textColor="@color/registerTextColor"
-                            android:textSize="@dimen/edt_font_size" />
+                            android:textSize="@dimen/edt_font_size"
+                            android:minLines="1"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionNext"
+                            android:nextFocusLeft="@id/edtPincodeNoCC"/>
 
                         <EditText
                             android:id="@+id/edtPincodeNoCC"
@@ -346,7 +369,10 @@
                             android:padding="5dp"
                             android:gravity="center_vertical"
                             android:textColor="@color/registerTextColor"
-                            android:textSize="@dimen/edt_font_size" />
+                            android:textSize="@dimen/edt_font_size"
+                            android:focusableInTouchMode="true"
+                            android:focusable="true"
+                            android:imeOptions="actionDone"/>
                     </LinearLayout>
 
                     <TextView

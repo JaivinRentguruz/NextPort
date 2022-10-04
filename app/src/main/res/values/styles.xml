@@ -21,6 +21,23 @@
         <item name="colorAccent">#148E13</item>
     </style>
 
+    <style name="dlg_datePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerStyle">@style/datePicker_style</item>
+
+    </style>
+
+    <style name="datePicker_style" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="colorAccent">#148E13</item>
+    </style>
+
+    <style name="progress" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">#148E13</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:actionBarSize">10dp</item>
+    </style>
+
+
     <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
     </style>

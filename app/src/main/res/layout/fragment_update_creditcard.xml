@@ -161,7 +161,7 @@
                                 android:background="@drawable/ic_rectanglebox_cardno"
                                 android:layout_marginTop="8dp"
                                 android:textSize="@dimen/edt_font_size"
-                                android:maxLength="20"
+                                android:maxLength="16"
                                 android:inputType="text"
                                 android:singleLine="true"
                                 android:hint="**** **** **** 7878"
@@ -223,7 +223,7 @@
                             android:layout_marginTop="8dp"
                             android:orientation="horizontal">
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/edt_ExpiryDate"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"

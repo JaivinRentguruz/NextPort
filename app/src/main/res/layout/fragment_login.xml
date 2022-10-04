@@ -99,6 +99,8 @@
                     android:drawableRight="@drawable/ic_actions_user"
                     android:fontFamily="@font/ubuntu_medium"
                     android:inputType="text"
+                    android:minLines="1"
+                    android:maxLines="1"
                     android:paddingTop="8dp"
                     android:textColor="@color/registerTextColor"
                     android:paddingBottom="15dp"
@@ -129,6 +131,8 @@
                     android:textSize="@dimen/edt_font_size"
                     android:textColor="@color/registerTextColor"
                     android:inputType="textPassword"
+                    android:minLines="1"
+                    android:maxLines="1"
                     android:textAlignment="textStart"
                     android:text="Guest@123"
                     android:fontFamily="@font/ubuntu_medium"
@@ -230,7 +234,17 @@
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:textColor="@color/TitleTextColor"/>
+                    android:textColor="@color/TitleTextColor"
+                    android:visibility="visible"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/TitleTextColor"
+                    android:visibility="gone"
+                    />
 
             </LinearLayout>
 

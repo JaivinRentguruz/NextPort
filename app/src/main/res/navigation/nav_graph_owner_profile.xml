@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FleetOwnerProfile"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_Fleet_Owner_Profile"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_Fleet_Owner_Profile"
         android:label="FleetOwnerProfile"
         tools:layout="@layout/fragment_fleet_owner_profile">
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/MemberShipPlan1"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_Membership_Plan_1"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_Membership_Plan_1"
         android:label="MemberShipPlan1"
         tools:layout="@layout/fragment_membership_plan_1">
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/MemberShipPlan2"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_Membership_Plan_2"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_Membership_Plan_2"
         android:label="MemberShipPlan1"
         tools:layout="@layout/fragment_membership_plan_2">
         <action
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/VehicleOnRent"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_VehicleonRent_List"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_VehicleonRent_List"
         android:label="VehicleOnRent"
         tools:layout="@layout/fragment_list_of_my_vehicle">
         <action
@@ -56,7 +56,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_1"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_1"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_1"
         android:label="ListYourCar_1"
         tools:layout="@layout/fragment_list_your_car_step_1">
         <action
@@ -69,7 +69,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_2"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_2"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_2"
         android:label="ListYourCar_2"
         tools:layout="@layout/fragment_list_your_car_step_2">
         <action
@@ -82,7 +82,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_3"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_3"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_3"
         android:label="ListYourCar_3"
         tools:layout="@layout/fragment_list_your_car_step_3">
         <action
@@ -95,7 +95,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_4"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_4"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_4"
         android:label="ListYourCar_4"
         tools:layout="@layout/fragment_list_your_car_step_4">
         <action
@@ -111,7 +111,7 @@
 
     <fragment
         android:id="@+id/MapScreenSearch"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_Map_Screen_Search_for_Owner"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_Map_Screen_Search_for_Owner"
         android:label="MapScreenSearch"
         tools:layout="@layout/fragment_map_screen_search">
         <action
@@ -121,7 +121,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_5"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_5"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_5"
         android:label="ListYourCar_5"
         tools:layout="@layout/fragment_list_your_car_step_5">
         <action
@@ -137,7 +137,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_5_1"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_5_1"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_5_1"
         android:label="ListYourCar_5"
         tools:layout="@layout/fragment_list_your_car_step_5_1">
         <action
@@ -147,7 +147,7 @@
 
     <fragment
         android:id="@+id/ListYourCar_6"
-        android:name="com.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_6"
+        android:name="com.nextport.flexiicar.app.fleetowner.ownerprofile.Fragment_List_Your_Car_Step_6"
         android:label="ListYourCar_6"
         tools:layout="@layout/fragment_list_your_car_step_6">
 
